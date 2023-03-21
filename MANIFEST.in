@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include salla *.css
+recursive-include salla *.csv
+recursive-include salla *.html
+recursive-include salla *.ico
+recursive-include salla *.js
+recursive-include salla *.json
+recursive-include salla *.md
+recursive-include salla *.png
+recursive-include salla *.py
+recursive-include salla *.svg
+recursive-include salla *.txt
+recursive-exclude salla *.pyc

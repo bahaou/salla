@@ -1,0 +1,173 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-03-21 16:10:18.031217",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "enabled",
+  "section_break_2",
+  "client_id",
+  "client_secret",
+  "access_token",
+  "refresh_token",
+  "amended_from",
+  "column_break_6",
+  "authorization_code",
+  "authorize1",
+  "refresh_t",
+  "expires_in",
+  "defaults_section",
+  "company",
+  "warehouses",
+  "price_list",
+  "column_break_17",
+  "sales_taxes_and_charges_template",
+  "customer_group",
+  "customer_territory"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Enabled"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "398bf11a-07f6-4cf7-9c50-83885e8ef50c",
+   "fieldname": "client_id",
+   "fieldtype": "Data",
+   "label": "Client ID",
+   "read_only": 1
+  },
+  {
+   "default": "224fdd8aaf6233a1fd4cf0fe723a3426",
+   "fieldname": "client_secret",
+   "fieldtype": "Data",
+   "label": "Client Secret",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Salla Settings",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "authorization_code",
+   "fieldtype": "Data",
+   "label": "Authorization Code"
+  },
+  {
+   "fieldname": "authorize1",
+   "fieldtype": "Button",
+   "label": "Authorize"
+  },
+  {
+   "fieldname": "access_token",
+   "fieldtype": "Data",
+   "label": "Access Token"
+  },
+  {
+   "fieldname": "refresh_token",
+   "fieldtype": "Data",
+   "label": "Refresh Token"
+  },
+  {
+   "fieldname": "expires_in",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Expires in"
+  },
+  {
+   "fieldname": "refresh_t",
+   "fieldtype": "Button",
+   "label": "Refresh"
+  },
+  {
+   "fieldname": "defaults_section",
+   "fieldtype": "Section Break",
+   "label": "Defaults"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "warehouses",
+   "fieldtype": "Table MultiSelect",
+   "label": "Warehouses",
+   "options": "Warehouse Item"
+  },
+  {
+   "fieldname": "price_list",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Price List",
+   "options": "Price List",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sales_taxes_and_charges_template",
+   "fieldtype": "Link",
+   "label": "Sales Taxes and Charges Template",
+   "options": "Sales Taxes and Charges Template"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer_group",
+   "fieldtype": "Link",
+   "label": "Customer Group",
+   "options": "Customer Group",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer_territory",
+   "fieldtype": "Link",
+   "label": "Customer Territory",
+   "options": "Territory",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2023-03-22 10:25:29.348997",
+ "modified_by": "Administrator",
+ "module": "Salla",
+ "name": "Salla Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

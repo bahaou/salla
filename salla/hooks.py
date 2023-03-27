@@ -38,7 +38,7 @@ app_license = "MIT"
 
 # Home Pages
 # ----------
-
+fixtures = ["Custom Field"]
 # application home page (will override Website Settings)
 # home_page = "login"
 
@@ -106,10 +106,12 @@ app_license = "MIT"
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-# 	"all": [
-# 		"salla.tasks.all"
-# 	],
+scheduler_events = {
+	"all": [
+		"salla.salla.data.get_orders",
+		"salla.salla.data.get_items"
+	]
+}
 # 	"daily": [
 # 		"salla.tasks.daily"
 # 	],
